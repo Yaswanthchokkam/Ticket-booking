@@ -1,0 +1,95 @@
+.carusol-container {
+    margin-top: 60px;
+    padding: 10px;
+    max-width: 100%;
+    max-height: 100vh;
+    overflow-x: hidden;
+    
+  }
+  .single-movie {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 70px;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url("https://images.hindustantimes.com/telugu/img/2022/12/31/1600x900/FlUCf15XgAcuTAV_1672505009966_1672505015227_1672505015227.jpg"); */
+    background-position: 50%;
+    background-size: cover;
+    filter: blur(4px); /* Adjust the blur amount as needed */
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the blurred background */
+  }
+ /* footer */
+ .icons{
+  color: gray;
+ }
+ .icons:hover{
+  color: white;
+ }
+ .foot-head{
+  color: gray;
+ }
+ .foot-head:hover{
+  color: white;
+ }
+ .footer{
+  display: flex;
+ }
+ /* theaters */
+ .theaters{
+  margin-top: 70px;
+ }
+ .link{
+  text-decoration: none;
+  /* color: white; */
+  color: green;
+ }
+ .link:hover{
+  color: white;
+ }
+ 
+  
+  @media screen and (max-width: 768px) {
+    .carusol-container {
+      margin-top: 100px;
+     
+    }
+  
+    .carousel-item img {
+      height: 1;
+      
+      object-fit: cover; /* Adjust max-height for smaller screens */
+    }
+    .rounded-circle {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+    }
+    .single-movie{
+      margin-top: 100px;
+    }
+    .movietrailer{
+      margin-top: 150px;
+      padding:60px;
+    }
+    .footer{
+      display: block;
+    }
+    /* movie theatres */
+    .theaters{
+      margin-top: 120px;
+
+    }
+  }
+  
+    
